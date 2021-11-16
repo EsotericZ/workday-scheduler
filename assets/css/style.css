@@ -13,6 +13,36 @@ textarea {
   padding: 10px;
 }
 
+table {
+  width: 90%;
+  margin: 0 auto;
+  /* table-layout: fixed; */
+}
+
+tr {
+  height: 60px;
+}
+
+td {
+  text-align: center;
+}
+
+td:nth-child(1) {
+  width: 10%;
+  text-align: right;
+}
+
+td:nth-child(2) {
+  width: 80%;
+  background-color: lightgreen;
+  text-align: left;
+}
+
+td:nth-child(3) {
+  width: 10%;
+  background-color: lightskyblue;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
