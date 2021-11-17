@@ -16,16 +16,16 @@ textarea {
 table {
   width: 90%;
   margin: 0 auto;
-  /* table-layout: fixed; */
+  table-layout: fixed;
 }
 
-tr {
+/* tr {
   height: 60px;
-}
+} */
 
-td {
+/* td {
   text-align: center;
-}
+} */
 
 td:nth-child(1) {
   width: 10%;
@@ -34,13 +34,13 @@ td:nth-child(1) {
 
 td:nth-child(2) {
   width: 80%;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   text-align: left;
 }
 
 td:nth-child(3) {
   width: 10%;
-  background-color: lightskyblue;
+  /* background-color: lightskyblue; */
 }
 
 .jumbotron {
