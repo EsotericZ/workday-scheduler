@@ -18,10 +18,25 @@ $(function() {
     setInterval(colorChanger, 1000);
 });
 
+// STORE ALL NOTES
 let store = [];
 $(".saveBtn").click(function() {
     let time = $(this).parent().children()[0].innerHTML;
     let message = $(this).parent().children()[1].value;
     let add = { time: time, message: message};
     store.push(add);
+    localStorage.setItem("store", JSON.stringify(store));
+});
+
+// RETRIEVE ALL NOTES FROM STORAGE
+let storedData = JSON.parse(localStorage.getItem('store'));
+storedData.forEach(element => {
+    let checkTime = element.time;
+    let checkMsg = element.message;
+    for (let i = 0; i < times.length; i++) {
+        let checkId = $(`#${times[i]}`).parent().children()[0].innerHTML;
+        if (checkTime == checkId) {
+            $(`#${times[i]}`).parent().children()[1].textContent = checkMsg;
+        }
+    }
 });
