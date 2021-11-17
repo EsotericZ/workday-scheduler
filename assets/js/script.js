@@ -17,3 +17,11 @@ function colorChanger() {
 $(function() {
     setInterval(colorChanger, 1000);
 });
+
+let store = [];
+$(".saveBtn").click(function() {
+    let time = $(this).parent().children()[0].innerHTML;
+    let message = $(this).parent().children()[1].value;
+    let add = { time: time, message: message};
+    store.push(add);
+});
