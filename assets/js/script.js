@@ -4,7 +4,7 @@ $("#currentDay").html(date);
 let times = [9, 10, 11, 12, 13, 14, 15, 16, 17]
 
 function colorChanger() {
-    const now = moment().format('h');
+    const now = moment().format('H');
     for (let i = 0; i < times.length; i++) {
         if (now > times[i]) {
             $(`#${times[i]}`).attr('class', 'col-10 past');
@@ -14,6 +14,7 @@ function colorChanger() {
     }
 }
 
+// CHECK TIME AND RUN COLORCHANGE EVERY SECOND
 $(function() {
     setInterval(colorChanger, 1000);
 });
