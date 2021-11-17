@@ -28,21 +28,20 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div>
-      <table>
-        <tbody>
-          <tr class="row">
-            <td class="hour">5am</td>
-            <td class="future">Something</td>
-            <td class="saveBtn"><button type="button"></button>Save</button></td> 
-          </tr>
-          <tr class="row">
-            <td class="hour">6am</td>
-            <td class="future">Something</td>
-            <td class="saveBtn"><button type="button">Save</button></td> 
-          </tr>
-        </tbody>
-      </table>
+    <div class="sizer">
+
+      <div class="row time-block">
+        <div class="col-1 hour">9AM</div>
+        <textarea class="col-10 future"></textarea>
+        <div class="col-1 saveBtn"><button type="button">Save</button></div> 
+      </div>
+      
+      <div class="row time-block">
+        <div class="col-1 hour">10AM</div>
+        <textarea class="col-10 future"></textarea>
+        <div class="col-1 saveBtn"><button type="button">Save</button></div> 
+      </div>
+
     </div>
 
     
